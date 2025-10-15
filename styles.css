@@ -1,0 +1,147 @@
+/* ...existing code... */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0.5rem 2rem;
+  box-shadow: none;
+  transition: box-shadow 0.2s;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.navbar.scrolled {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 48px;
+  margin-right: 1rem;
+}
+#navcontent {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#navcontent li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+#navcontent li a:hover {
+  color: #e4002b;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.search-bar {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  margin-right: 0.5rem;
+}
+.fa-user, .fa-shopping-cart {
+  font-size: 1.3rem;
+  color: #222;
+  margin-left: 0.5rem;
+  transition: color 0.2s;
+}
+.fa-user:hover, .fa-shopping-cart:hover {
+  color: #e4002b;
+}
+.hero {
+  background: url('Nkomo\ Logo.png') center/cover no-repeat;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.btn {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-primary {
+  background: #e4002b;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #b30022;
+}
+.btn-secondary {
+  background: #fff;
+  color: #e4002b;
+  border: 2px solid #e4002b;
+}
+.btn-secondary:hover {
+  background: #e4002b;
+  color: #fff;
+}
+.featured {
+  padding: 2rem 0;
+  background: #fafafa;
+  text-align: center;
+}
+.featured-products {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+/* ...existing code... */
